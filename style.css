@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F4F8;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+body > h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 4px;
+    width: 100%;
+    max-width: 900px;
+}
+
+body > h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #64748b;
+    margin-bottom: 24px;
+    width: 100%;
+    max-width: 900px;
+}
+
+section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+}
+
+#divPer, #divView {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex: 1;
+}
+
+#divPer h1 {
+    font-size: 18px;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+#divView h1 {
+    font-size: 18px;
+    color: #0f172a;
+    font-weight: 700;
+    text-align: center;
+}
+
+#divPer label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+}
+
+#divPer input[type="text"],
+#divPer select {
+    border: 1px solid #cbd5e1;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1e293b;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#divPer input[type="text"]:focus,
+#divPer select:focus {
+    border-color: #2563eb;
+}
+
+#divPer h5 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+#divPer label:has(input[type="radio"]),
+#divPer label:has(input[type="checkbox"]) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    font-weight: 400;
+}
+
+#divPer input[type="radio"],
+#divPer input[type="checkbox"] {
+    accent-color: #2563eb;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+
+#cardPreview {
+    width: 100%;
+    aspect-ratio: 1.58 / 1;
+    border-radius: 16px;
+    padding: 24px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.25);
+    background: linear-gradient(135deg, #263D86, #375BAC, #4574CD);
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+#cardPreview.classico {
+    background: linear-gradient(135deg, #263D86, #375BAC, #4574CD);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.25);
+}
+
+#cardPreview.gold {
+    background: linear-gradient(135deg, #855d14, #c99326, #dfb758);
+    box-shadow: 0 12px 28px rgba(184, 134, 11, 0.25);
+}
+
+#cardPreview.platinum {
+    background: linear-gradient(135deg, #1e293b, #334155, #475569);
+    box-shadow: 0 12px 28px rgba(30, 41, 59, 0.25);
+}
+
+
+.cardTopo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-banco {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    opacity: 0.9;
+}
+
+.cardChip {
+    width: 38px;
+    height: 28px;
+    background: linear-gradient(135deg, #d3b34a, #f7d070);
+    border-radius: 6px;
+}
+
+
+.cardNumero {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+
+.card-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.card-label {
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    opacity: 0.75;
+}
+
+.card-valor {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.card-bandeira {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+
+#viewBeneficios {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    min-height: 24px;
+}
+
+.badge-beneficio {
+    background-color: #f1f5f9;
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+#divView h5 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #94a3b8;
+    text-align: center;
+    line-height: 1.4;
+}

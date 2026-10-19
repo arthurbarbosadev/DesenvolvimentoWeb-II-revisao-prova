@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Personalizador de cartão</h1>
+    <h4>Preencha os campos e veja o cartão mudar em tempo real</h4>
+    <section>
+        <div id="divPer">
+            <h1>Personalize seu cartão</h1>
+
+            <label>
+                Nome do titular
+                <input type="text" id="inputNome">
+            </label>
+
+            <label>
+                Número do cartão
+                <input type="text" placeholder="1234 5678 9101 1213" id="inputCartao" maxlength="19">
+                <h5>Digite até 16 números, use apenas dados ficticios</h5>
+            </label>
+
+            <label>
+                Validade
+                <input type="text" placeholder="MM/AA" id="inputValidade" maxlength="5">
+
+            </label>
+
+            <label>
+                Bandeira do cartão
+                <select id="selectBandeira">
+                    <option value="visa">Visa</option>
+                    <option value="master">Master</option>
+                    <option value="elo">Elo</option>
+                </select>
+            </label>
+
+            <label>
+                Modelo do cartão
+                <input type="radio" name="modelo" value="classico"> Clássico
+                <input type="radio" name="modelo" value="gold"> Gold
+                <input type="radio" name="modelo" value="platinum"> Platinum
+            </label>
+
+            <label>
+                Benefícios
+                <input type="checkbox" name="beneficios" value="Contacless"> Contacless
+                <input type="checkbox" name="beneficios" value="Internacional"> Internacional
+                <input type="checkbox" name="beneficios" value="Cashback"> Cashback
+            </label>
+        </div>
+
+        <div id="divView">
+            <h1>Pré-visualização</h1>
+
+            <div id="cardPreview">
+                <div class="cardTopo">
+                    <span class="card-banco">BANCO EXEMPLO</span>
+                </div>
+                <div class="cardChip"></div>
+          
+
+            <div id="viewNumero" class="cardNumero">1234 5678 9101 1213</div>
+             <div class="card-rodape">
+                <div class="card-campo">
+                    <span class="card-label">TITULAR</span>
+                    <span id="viewNome" class="card-valor">NOME DO TITULAR</span>
+                </div>
+                <div class="card-campo">
+                    <span class="card-label">VALIDADE</span>
+                    <span id="viewValidade" class="card-valor">MM/AA</span>
+                </div>
+                <div id="viewBandeira" class="card-bandeira">VISA</div>
+            </div>  </div>
+      
+        <div id="viewBeneficios"></div>
+            <h5>Este cartao é apenas uma demonstração visual. Não insira dados reais.</h5>
+              </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
